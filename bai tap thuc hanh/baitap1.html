@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="kc">
+<img id="avt" src="https://i.gifer.com/8EQz.gif"
+     alt="" style="position:absolute ; top:50px ; left: 0px;">
+<button onclick="phai()">sang phải</button>
+<button onclick="trai()">sang trái</button>
+<button onclick="xuong()">đi xuống</button>
+<button onclick="len()">đi lên</button>
+<script>
+    let avt = document.getElementById('avt')
+    let kc = document.getElementById('kc')
+    function phai() {
+        avt.style.left= parseInt(avt.style.left) +10 + "px";
+    }
+    function trai() {
+        avt.style.left= parseInt(avt.style.left) -10 + "px";
+    }
+    function xuong() {
+        avt.style.top= parseInt(avt.style.top) +10 + "px";
+    }
+    function len() {
+        avt.style.top= parseInt(avt.style.top) -10 + "px";
+    }
+</script>
+
+</body>
+</html>

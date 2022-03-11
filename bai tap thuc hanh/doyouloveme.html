@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Do You Love Me</title>
+
+</head>
+<body id="son">
+<h1>Do You Love Me?</h1>
+<button style="position :absolute ; left:90px; top:90px;" onmouseover="dichuyen()" id="btn">no</button>
+<button onclick="yes()">yes</button>
+<script>
+    let btn = document.getElementById("btn")
+
+    function dichuyen() {
+        btn.style.left = Math.random() * 500 + 'px';
+        btn.style.top = Math.random() * 200 + 'px';
+    }
+
+    function yes() {
+        son.style.background = 'url("https://i.pinimg.com/originals/6e/7b/52/6e7b524cbe4ec38ece70226945cae813.gif")'
+        alert(" Bị Lừa Rồi ^^");
+        son.style.background= cover
+
+    }
+</script>
+
+</body>
+</html>

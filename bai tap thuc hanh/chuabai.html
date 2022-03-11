@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img src="1.jpg" alt="" id="son" style="position: absolute ; left : 0 ; top : 0 ;">
+<script>
+    let son = document.getElementById('son')
+    window.addEventListener("keydown", (evt) => {
+        if (evt.keyCode == 37) {
+            son.style.left = parseInt(son.style.left) - 10 + "px";
+        }
+        if (evt.keyCode == 38) {
+            son.style.top = parseInt(son.style.top) - 10 + "px";
+        }
+        if (evt.keyCode == 39) {
+            son.style.left = parseInt(son.style.left) + 10 + "px";
+        }
+        if (evt.keyCode == 40) {
+            son.style.top = parseInt(son.style.top) + 10 + "px";
+        }
+    })
+
+
+</script>
+
+</body>
+</html>
