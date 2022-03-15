@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="but()"> chơi</button>
+<script>
+    function but() {
+        let a = parseInt(prompt("nhập khoảng bắt đầu"));
+        let b = parseInt(prompt("nhập khoảng kết thúc"));
+        let c = Math.floor(Math.random() * (b - a) + a);
+        for (i = 0; i < 3; i++) {
+            let d = prompt("nhập số muốn chơi");
+            if ( d==c ) {
+                alert("Win!");
+            } else if (d < c) {
+                alert("số nhỏ hơn!");
+            } else {
+                alert("số lớn hơn!");
+            }
+
+        }
+    }
+</script>
+
+</body>
+</html>
